@@ -12,7 +12,7 @@ class signup extends Component{
            email:'',
            password:'',
            confirmPassword:''
-        }
+        };
     }
     handleSubmit=async event => {
         event.preventDefault();
@@ -47,13 +47,13 @@ class signup extends Component{
                 <h2 className="title">I do not have a account</h2>
                 <span>Sign Up with Your Email and Password</span>
                 <form className="sign-up-form" onSubmit={this.handleSubmit}>
-                    <FormInput name="displayName" type="text" value={displayName} handleChange={this.handleChange} 
+                    <FormInput name="displayName" type="text" value={displayName} onChange={this.handleChange} 
                      label="Display Name" required></FormInput>
-                     <FormInput name="email" type="email" value={email} handleChange={this.handleChange} 
+                     <FormInput name="email" type="email" value={email} onChange={this.handleChange} 
                      label="Email" required></FormInput>
-                     <FormInput name="password" type="password" value={password} handleChange={this.handleChange}
+                     <FormInput name="password" type="password" value={password} onChange={this.handleChange}
                      label="Password" required></FormInput>
-                    <FormInput name="confirmPassword" type="password" value={confirmPassword} handleChange={this.handleChange} 
+                    <FormInput name="confirmPassword" type="password" value={confirmPassword} onChange={this.handleChange} 
                      label="Confirm Password" required></FormInput>
                      
                      <CustomButton type="submit" >Sign Up</CustomButton>
